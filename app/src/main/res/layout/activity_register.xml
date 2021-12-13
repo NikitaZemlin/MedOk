@@ -4,10 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
+    tools:context=".RegisterActivity"
     android:orientation="vertical"
-    android:background="@color/white"
-    >
+    android:background="@color/white">
 
     <TextView
         android:layout_width="match_parent"
@@ -24,10 +23,10 @@
         android:background="@color/black"/>
 
     <EditText
-        android:id="@+id/ETLogin"
+        android:id="@+id/ETLoginReg"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:hint="Логин"
+        android:hint="Адрес почты"
         android:textColorHint="@color/gray"
         android:backgroundTint="@color/gray"
         android:textColor="@color/black"
@@ -35,7 +34,7 @@
         android:layout_marginTop="50dp"/>
 
     <EditText
-        android:id="@+id/ETPassword"
+        android:id="@+id/ETPasswordReg"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:hint="Пароль"
@@ -46,19 +45,19 @@
         android:layout_marginTop="50dp"/>
 
     <Button
-        android:id="@+id/BTNLogin"
+        android:id="@+id/BTNLoginReg"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:text="Вход"
+        android:text="Регистрация"
         android:textSize="20dp"
         android:layout_marginTop="50dp"/>
     <TextView
-        android:id="@+id/TVNoAccount"
+        android:id="@+id/TVYesAccount"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:text="Нет аккаунта?"
+        android:text="Уже есть аккаунт?"
         android:layout_marginTop="10dp"
         android:textSize="25sp"
         android:gravity="center"
