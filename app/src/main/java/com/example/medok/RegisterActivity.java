@@ -43,12 +43,6 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
             case R.id.BTNLoginReg:
                 String login = ETLoginReg.getText().toString();
                 String password = ETPasswordReg.getText().toString();
-
-                if (TextUtils.isEmpty(login)){
-                    ETLoginReg.setError("Почта уже занят!");
-                    return;
-                }
-
                 fAuth.createUserWithEmailAndPassword(login, password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
@@ -61,8 +55,6 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
                     }
                 });
                 break;
-
-
 
             case R.id.TVYesAccount:
                 startActivity(new Intent(RegisterActivity.this, MainActivity.class));
