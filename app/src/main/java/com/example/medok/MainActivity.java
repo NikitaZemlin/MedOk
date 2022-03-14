@@ -46,8 +46,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View view) {
         switch (view.getId()){
             case R.id.BTNLogin:
-                String login = ETLogin.getText().toString();
-                String password = ETPassword.getText().toString();
+                String login = ETLogin.getText().toString().trim();
+                String password = ETPassword.getText().toString().trim();
 
                 if (TextUtils.isEmpty(login)){
                     ETLogin.setError("Некорректный логин");

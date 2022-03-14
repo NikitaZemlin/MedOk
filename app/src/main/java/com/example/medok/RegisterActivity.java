@@ -41,8 +41,8 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
     public void onClick(View view) {
         switch (view.getId()){
             case R.id.BTNLoginReg:
-                String login = ETLoginReg.getText().toString();
-                String password = ETPasswordReg.getText().toString();
+                String login = ETLoginReg.getText().toString().trim();
+                String password = ETPasswordReg.getText().toString().trim();
                 fAuth.createUserWithEmailAndPassword(login, password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
