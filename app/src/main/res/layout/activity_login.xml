@@ -4,57 +4,55 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RegisterActivity"
+    tools:context=".LoginActivity"
     android:orientation="vertical"
-    android:background="@color/back">
+    android:background="@color/white"
+    android:backgroundTint="@color/back"
+    >
 
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="350dp"
-        android:text="Логотип"
-        android:textSize="70dp"
         android:src="@drawable/logo"
         android:gravity="center"
         android:textColor="@color/black"
         />
 
-
     <EditText
-        android:id="@+id/ETLoginReg"
+        android:id="@+id/ETLogin"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:hint="Адрес почты"
+        android:hint="Логин"
         android:textColorHint="#857E7E"
         android:backgroundTint="@color/black"
         android:textColor="@color/black"
         android:layout_gravity="center_horizontal" />
 
     <EditText
-        android:id="@+id/ETPasswordReg"
+        android:id="@+id/ETPassword"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:hint="Пароль"
         android:textColorHint="#857E7E"
         android:backgroundTint="@color/black"
-        android:textColor="@color/black"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="50dp"/>
 
     <Button
-        android:id="@+id/BTNLoginReg"
+        android:id="@+id/BTNLogin"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:text="Регистрация"
-        android:textSize="20dp"
-        android:layout_marginTop="50dp"
-        android:backgroundTint="@color/btn_green"/>
+        android:backgroundTint="@color/btn_green"
+        android:text="Вход"
+        android:textSize="20sp"
+        android:layout_marginTop="50dp"/>
     <TextView
-        android:id="@+id/TVYesAccount"
+        android:id="@+id/TVNoAccount"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:text="Уже есть аккаунт?"
+        android:text="Нет аккаунта?"
         android:layout_marginTop="10dp"
         android:textSize="25sp"
         android:gravity="center"

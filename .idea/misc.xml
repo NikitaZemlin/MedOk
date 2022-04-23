@@ -5,6 +5,19 @@
       <map>
         <entry key="..\:/Users/Nikzem/Desktop/MedOk/app/src/main/res/layout/activity_main.xml" value="0.33" />
         <entry key="..\:/Users/Nikzem/Desktop/MedOk/app/src/main/res/layout/activity_register.xml" value="0.20520833333333333" />
+        <entry key="..\:/Users/Nikzem/StudioProjects/MedOk/app/src/main/res/drawable/ic_account.xml" value="0.332" />
+        <entry key="..\:/Users/Nikzem/StudioProjects/MedOk/app/src/main/res/drawable/ic_baseline_golf_course_24.xml" value="0.332" />
+        <entry key="..\:/Users/Nikzem/StudioProjects/MedOk/app/src/main/res/drawable/ic_baseline_medical_services_24.xml" value="0.332" />
+        <entry key="..\:/Users/Nikzem/StudioProjects/MedOk/app/src/main/res/drawable/ic_exit.xml" value="0.332" />
+        <entry key="..\:/Users/Nikzem/StudioProjects/MedOk/app/src/main/res/drawable/ic_settings.xml" value="0.332" />
+        <entry key="..\:/Users/Nikzem/StudioProjects/MedOk/app/src/main/res/layout/activity_login.xml" value="0.18802083333333333" />
+        <entry key="..\:/Users/Nikzem/StudioProjects/MedOk/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Nikzem/StudioProjects/MedOk/app/src/main/res/layout/activity_my_acc.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Nikzem/StudioProjects/MedOk/app/src/main/res/layout/activity_register.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Nikzem/StudioProjects/MedOk/app/src/main/res/layout/activity_togo.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Nikzem/StudioProjects/MedOk/app/src/main/res/layout/activity_zapisi.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Nikzem/StudioProjects/MedOk/app/src/main/res/layout/main_nav_drawer.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Nikzem/StudioProjects/MedOk/app/src/main/res/menu/acc_menu.xml" value="0.36666666666666664" />
       </map>
     </option>
   </component>

@@ -19,7 +19,7 @@ import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 
-public class MainActivity extends AppCompatActivity {
+public class Togo extends AppCompatActivity {
     DrawerLayout drawerLayout;
     //Меню
     Toolbar mainToolBar;
@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_togo);
         //Доступ к переменным
         drawerLayout = findViewById(R.id.drawer_Layout);
         //БД
@@ -43,11 +43,12 @@ public class MainActivity extends AppCompatActivity {
 
         mainToolBar = (Toolbar) findViewById(R.id.main_toolbar);
         setSupportActionBar(mainToolBar);
-        getSupportActionBar().setTitle("Главная");
+        getSupportActionBar().setTitle("Путь");
         drawerToggle = new ActionBarDrawerToggle(this, drawerLayout, mainToolBar, R.string.app_name,
                 R.string.app_name);
         drawerLayout.setDrawerListener(drawerToggle);
         drawerToggle.getDrawerArrowDrawable().setColor(getResources().getColor(R.color.white));
+
     }
 
 

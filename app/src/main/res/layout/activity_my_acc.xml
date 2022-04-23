@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawer_layout"
+    tools:context=".My_acc"
+    android:background="@color/back">
+
+<ScrollView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/main_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bar"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            app:titleTextColor="@color/white"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/def_prof"
+            android:layout_gravity="center"
+            app:civ_border_color="#918F8F"
+            app:civ_border_width="1dp" />
+
+        <EditText
+            android:id="@+id/acc_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="20dp"
+            android:hint="Имя"
+            android:backgroundTint="@color/EditTextAcc"
+            android:textColor="@color/EditTextAcc"
+            android:textColorHint="@color/EditTextAcc" />
+
+        <EditText
+            android:id="@+id/acc_lastname"
+            android:hint="Фамилия"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="@color/EditTextAcc"
+            android:textColor="@color/EditTextAcc"
+            android:textColorHint="@color/EditTextAcc"/>
+
+        <EditText
+            android:id="@+id/acc_middlename"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="20dp"
+            android:enabled="false"
+            android:hint="Отчество"
+            android:backgroundTint="@color/EditTextAcc"
+            android:textColor="@color/EditTextAcc"
+            android:textColorHint="@color/EditTextAcc"/>
+
+        <EditText
+            android:id="@+id/acc_snils"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="20dp"
+            android:enabled="false"
+            android:hint="Снилс"
+            android:backgroundTint="@color/EditTextAcc"
+            android:textColor="@color/EditTextAcc"
+            android:textColorHint="@color/EditTextAcc"/>
+        <EditText
+            android:id="@+id/acc_polis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="20dp"
+            android:enabled="false"
+            android:hint="Номер полиса"
+            android:backgroundTint="@color/EditTextAcc"
+            android:textColor="@color/EditTextAcc"
+            android:textColorHint="@color/EditTextAcc"/>
+        <EditText
+            android:id="@+id/acc_age"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="20dp"
+            android:enabled="false"
+            android:hint="Дата рождения"
+            android:backgroundTint="@color/EditTextAcc"
+            android:textColor="@color/EditTextAcc"
+            android:textColorHint="@color/EditTextAcc"/>
+        <Button
+            android:id="@+id/acc_save"
+            android:text="Сохранить"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:textSize="20sp"
+            android:backgroundTint="@color/btn_green"
+            android:visibility="invisible"/>
+
+    </LinearLayout>
+</ScrollView>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/white">
+
+        <include
+            layout="@layout/main_nav_drawer"/>
+
+
+    </RelativeLayout>
+</androidx.drawerlayout.widget.DrawerLayout>

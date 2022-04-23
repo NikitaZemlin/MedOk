@@ -5,7 +5,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -35,6 +34,12 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
         TVYesAccount.setOnClickListener(this);
 
         fAuth = FirebaseAuth.getInstance();
+
+        if (fAuth.getCurrentUser() != null){
+            startActivity(new Intent(getApplicationContext(), MainActivity.class));
+            finish();
+        }
+
     }
 
     @Override
@@ -51,13 +56,14 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
                         }
                         else{
                             Toast.makeText(RegisterActivity.this, "Ошибка!", Toast.LENGTH_SHORT).show();
+                            startActivity(new Intent(getApplicationContext(), MainActivity.class));
                         }
                     }
                 });
                 break;
 
             case R.id.TVYesAccount:
-                startActivity(new Intent(RegisterActivity.this, MainActivity.class));
+                startActivity(new Intent(RegisterActivity.this, LoginActivity.class));
                 break;
         }
 
