@@ -19,7 +19,7 @@ import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 
-public class MainActivity extends AppCompatActivity {
+public class Medical extends AppCompatActivity {
     DrawerLayout drawerLayout;
     //Меню
     Toolbar mainToolBar;
@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_medical);
         //Доступ к переменным
         drawerLayout = findViewById(R.id.drawer_Layout);
         //БД
@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
 
         mainToolBar = (Toolbar) findViewById(R.id.main_toolbar);
         setSupportActionBar(mainToolBar);
-        getSupportActionBar().setTitle("Главная");
+        getSupportActionBar().setTitle("Врачи и кабинеты");
         drawerToggle = new ActionBarDrawerToggle(this, drawerLayout, mainToolBar, R.string.app_name,
                 R.string.app_name);
         drawerLayout.setDrawerListener(drawerToggle);
@@ -75,29 +75,19 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    public void ClickHome(View view){
-        //Закрываем меню
+    public void ClickMedical(View view){
         closeDrawer(drawerLayout);
     }
-
     public void ClickMyAcc(View view){
-        //Перевыбираем окно на мой аккаунт
         redirectActivity(this, My_acc.class);
     }
-
     public void ClickCart(View view){
-        //Перевыбираем окно на корзину
         redirectActivity(this, Zapisi.class);
     }
-
-    public void ClickSettings(View view){
-        //Перевыбираем окно на доску
+    public void ClickToGo(View view){
         redirectActivity(this, Togo.class);
     }
-
-
     public void ClickLogout(View view){
-        //закрытие приложения
         logout(this);
     }
 

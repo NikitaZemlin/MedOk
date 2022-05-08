@@ -1,5 +1,8 @@
 package com.example.medok;
 
+import static com.example.medok.Medical.closeDrawer;
+import static com.example.medok.Medical.redirectActivity;
+
 import android.Manifest;
 import android.annotation.SuppressLint;
 import android.content.Intent;
@@ -266,50 +269,26 @@ public class My_acc extends AppCompatActivity {
     }
 
 
-    public void ClickMenu (View view){
-        //Откртые панели навигации
-        MainActivity.openDrawer(drawerLayout);
-    }
-
-    public void ClickLogo(View view){
-        //Закрытие панели навигации
-        MainActivity.closeDrawer(drawerLayout);
-    }
-
-    public void ClickHome(View view){
-        //Перевыбор окна на домашнее
-        MainActivity.redirectActivity(this, MainActivity.class);
-    }
-
     public void  ClickMyAcc(View view){
-        //Закрываем меню
-        MainActivity.closeDrawer(drawerLayout);
+        closeDrawer(drawerLayout);
     }
-
-//    public void  ClickCart(View view){
-//        //Перевыбор окна на Коризину
-//        MainActivity.redirectActivity(this, Cart.class);
-//    }
-//
-//    public void ClickSettings(View view){
-//        //Перевыбор окна на доску
-//        MainActivity.redirectActivity(this, Settings.class);
-//    }
-//
-//    public void  ClickAboutUs(View view){
-//        //Перевыбор окна на Мой аккаунт
-//        MainActivity.redirectActivity(this, AboutUs.class);
-//    }
-
+    public void ClickMedical(View view){
+        redirectActivity(this, Medical.class);
+    }
+    public void ClickCart(View view){
+        redirectActivity(this, Zapisi.class);
+    }
+    public void ClickToGo(View view){
+        redirectActivity(this, Togo.class);
+    }
     public  void ClickLogout(View view){
-        //Закрытие приложения
-        MainActivity.logout(this);
+        Medical.logout(this);
     }
 
     @Override
     protected void onPause() {
         super.onPause();
         //Закртые панели навигации
-        MainActivity.closeDrawer(drawerLayout);
+        closeDrawer(drawerLayout);
     }
 }

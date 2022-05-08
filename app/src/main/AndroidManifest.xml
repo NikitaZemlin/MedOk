@@ -23,7 +23,7 @@
             android:name=".Zapisi"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".Medical"
             android:exported="false" />
         <activity
             android:name=".RegisterActivity"

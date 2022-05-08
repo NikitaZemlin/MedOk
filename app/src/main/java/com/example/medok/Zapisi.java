@@ -76,29 +76,19 @@ public class Zapisi extends AppCompatActivity {
         }
     }
 
-    public void ClickHome(View view){
-        //Закрываем меню
+    public void ClickCart(View view){
         closeDrawer(drawerLayout);
     }
-
     public void ClickMyAcc(View view){
-        //Перевыбираем окно на мой аккаунт
         redirectActivity(this, My_acc.class);
     }
-
-    public void ClickCart(View view){
-        //Перевыбираем окно на корзину
-        redirectActivity(this, Zapisi.class);
-    }
-
-    public void ClickSettings(View view){
-        //Перевыбираем окно на доску
+    public void ClickToGo(View view){
         redirectActivity(this, Togo.class);
     }
-
-
+    public void ClickMedical(View view){
+        redirectActivity(this, Medical.class);
+    }
     public void ClickLogout(View view){
-        //закрытие приложения
         logout(this);
     }
 
